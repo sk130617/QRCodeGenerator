@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QR Code</title>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!--container below is the main UI widnow -->
+    <div class="container">
+      <div class="header">
+        <h1>QR Code generator</h1>
+        <p>Type a list of strings</p>
+      </div>
+      <!--Form to get user input - array of strings-->
+      <div class="input-form">
+        <input
+          type="text"
+          class="qr-input-array"
+          placeholder="Enter a list of strings"
+        />
+        <button class="generate-btn">Generate QC Codes</button>
+      </div>
+      <!--Store generated QR Code-->
+      <div class="qr-code">
+        <img class="qr-image" />
+      </div>
+      <!--Prev/Next burrons and custom line when more than 1 element is in input array-->
+      <div class="header-1">
+        <p>Click on the buttons to move between QR codes</p>
+      </div>
+      <button class="prev-btn"><</button>
+      <button class="next-btn">></button>
+    </div>
+  </body>
+</html>
